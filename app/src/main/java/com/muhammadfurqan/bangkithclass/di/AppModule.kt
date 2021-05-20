@@ -1,6 +1,5 @@
 package com.muhammadfurqan.bangkithclass.di
 
-import com.muhammadfurqan.bangkithclass.model.Car
 import com.muhammadfurqan.bangkithclass.model.Engine
 import dagger.Module
 import dagger.Provides
@@ -8,11 +7,13 @@ import dagger.Provides
 /**
  * @author by furqan on 20/05/2021
  */
-@Module
-class AppModule {
+// Dagger Module
 
-    @Provides
-    fun provideEngine(): Engine = Engine()
+//@Module
+//class AppModule {
+//
+//    @Provides
+//    fun provideEngine(): Engine = Engine()
 
     // If you use Field Injection
 //    @Provides
@@ -20,4 +21,4 @@ class AppModule {
 //        it.engine = engine
 //    }
 
-}
+//}

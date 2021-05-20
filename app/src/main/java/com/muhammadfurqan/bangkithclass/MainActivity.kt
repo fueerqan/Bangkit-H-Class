@@ -5,8 +5,10 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import com.muhammadfurqan.bangkithclass.model.Car
+import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private val textview: TextView by lazy {
@@ -24,7 +26,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        (application as MyApplication).appComponent.inject(this)
+        // Dagger Injection
+//        (application as MyApplication).appComponent.inject(this)
 
         btn.setOnClickListener {
             textview.text = car.getType()

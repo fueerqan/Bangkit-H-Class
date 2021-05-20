@@ -6,14 +6,14 @@ import dagger.Component
 /**
  * @author by furqan on 20/05/2021
  */
-@Component(modules = [AppModule::class])
-interface AppComponent {
-
-    @Component.Factory
-    interface Factory {
-        fun create(): AppComponent
-    }
-
-    fun inject(activity: MainActivity)
-
-}
+//@Component(modules = [AppModule::class])
+//interface AppComponent {
+//
+//    @Component.Factory
+//    interface Factory {
+//        fun create(): AppComponent
+//    }
+//
+//    fun inject(activity: MainActivity)
+//
+//}

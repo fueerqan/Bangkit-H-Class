@@ -1,16 +1,18 @@
 package com.muhammadfurqan.bangkithclass
 
 import android.app.Application
-import com.muhammadfurqan.bangkithclass.di.AppComponent
-import com.muhammadfurqan.bangkithclass.di.DaggerAppComponent
+import dagger.hilt.android.HiltAndroidApp
 
 /**
  * @author by furqan on 20/05/2021
  */
+// Hilt Initialization
+@HiltAndroidApp
 class MyApplication : Application() {
 
-    val appComponent: AppComponent by lazy {
-        DaggerAppComponent.factory().create()
-    }
+    // Dagger Initialization
+//    val appComponent: AppComponent by lazy {
+//        DaggerAppComponent.factory().create()
+//    }
 
 }
