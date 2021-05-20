@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Bangkit H Class</string>
+    <string name="click_me">Click Me!</string>
+    <string name="navigate_to_core">Navigate To Core!</string>
 </resources>
